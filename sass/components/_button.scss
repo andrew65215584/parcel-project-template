@@ -1,0 +1,98 @@
+/* button */
+.button {
+	background-color: $accent-color;
+	color: $button-text;
+	text-decoration: none;
+	font-family: inherit;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.87;
+	letter-spacing: 0.06em;
+
+	display: block;
+	padding: 11px 32px;
+	min-width: 200px;
+	min-height: 50px;
+	text-align: center;
+	border-radius: 4px;
+	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+	border: transparent;
+	cursor: pointer;
+}
+
+.button.primary {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+
+
+.button-portfolio {
+	display: flex;
+	flex-wrap: wrap;
+
+	// justify-content: center;
+	margin-bottom: 50px;
+
+	@media screen and(min-width:768px) {
+		justify-content: center;
+		
+	}
+}
+
+
+.button-portfolio:hover,
+.button-portfolio:focus {
+	color: #212121;
+}
+
+
+
+.button-portfolio .lil {
+	margin-right: 8px;
+	margin-bottom: 20px;
+}
+
+.button-portfolio .lil:nth-child(5n) {
+	margin-right: 0px;
+}
+
+.button-portfolio-li {
+	border: 0px;
+	border-radius: 4px;
+	border-color: transparent;
+
+	padding: 6px 22px;
+
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.6;
+	letter-spacing: 0.03em;
+
+	color: $primary-text-color;
+	background: $secondary-background-color;
+		
+	transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+	cursor: pointer;
+}
+
+
+.button-portfolio-li:hover,
+.button-portfolio-li:focus {
+	background-color: $accent-color;
+}
+
+.button-text {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.62;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: $title-text-color;
+}
+.button-portfolio-li:hover .button-text,
+.button-portfolio-li:focus .button-text {
+	color: white;
+}

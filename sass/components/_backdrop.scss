@@ -1,0 +1,45 @@
+.backdrop-row {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	display: flex;
+}
+
+.backdrop {
+	position: fixed;
+	z-index: 200;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(49, 48, 46, 0.5);
+
+	transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1) 0.2s;
+	opacity: 1;
+	overflow-y: scroll;
+}
+
+.backdrop.is-hidden {
+	pointer-events: none;
+
+	transition: opacity 0.5s cubic-bezier(0.4, 0, 0.2, 1) 2s;
+	opacity: 0;
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+	.backdrop-row {
+		padding: 93px 15px 93px 15px;
+
+	}
+	
+	
+
+
+
+
+}
